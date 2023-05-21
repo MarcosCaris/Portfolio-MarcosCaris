@@ -23,16 +23,25 @@ body {
 	}
 }
 .circle__container {
+	z-index: -5;
 	width: 100%;
 	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+.flex-container {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
 .circle__intro {
+	position: absolute;
 	width: 100px;
 	height: 100px;
-	margin: 10px;
+	margin: auto;
 	border-radius: 100%;
 	background-color: #0f0f0f;
 	animation: entrada 2s ease-in-out;
@@ -40,15 +49,125 @@ body {
 
 @keyframes entrada {
 	0% {
-		transform: scale(1);
+		transform: scale(0);
 	}
 	40% {
 		transform: scale(3);
 	}
-	60% {
-		transform: scale(2);
+	50% {
+		transform: scale(3);
 	}
 	100% {
 		transform: scale(23);
+	}
+}
+.bar__container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.bar__intro_1 {
+	position: absolute;
+	display: flex;
+	rotate: 90deg;
+	left: 1px;
+	z-index: 40;
+	width: 650px;
+	height: 10px;
+	background-color: aliceblue;
+	border-radius: 5px;
+	animation: bar1 4s ease-in-out forwards;
+}
+@keyframes bar1 {
+	0% {
+		transform: scaleX(0);
+		transform-origin: top;
+	}
+	50% {
+		transform: scaleX(0);
+		transform-origin: top;
+	}
+	100% {
+		transform: scaleX(1);
+		transform-origin: top;
+	}
+}
+.bar__intro_2 {
+	position: absolute;
+	display: flex;
+	z-index: 40;
+	width: 1300px;
+	top: 150px;
+	width: 650px;
+	height: 10px;
+	background-color: aliceblue;
+	border-radius: 5px;
+	animation: bar2 4s ease-in-out forwards;
+}
+@keyframes bar2 {
+	0% {
+		transform: scaleX(0);
+		transform-origin: top;
+	}
+	50% {
+		transform: scaleX(0);
+		transform-origin: top;
+	}
+	100% {
+		transform: scaleX(1.96);
+		transform-origin: top;
+	}
+}
+.bar__intro_3 {
+	position: absolute;
+	display: flex;
+	right: -1;
+	rotate: 90deg;
+	z-index: 40;
+	width: 650px;
+	height: 10px;
+	background-color: aliceblue;
+	border-radius: 5px;
+	animation: bar3 4s ease-in-out forwards;
+}
+@keyframes bar3 {
+	0% {
+		transform: scaleX(0);
+		transform-origin: top;
+	}
+	50% {
+		transform: scaleX(0);
+		transform-origin: top;
+	}
+	100% {
+		transform: scaleX(1);
+		transform-origin: top;
+	}
+}
+.bar__intro_4 {
+	position: absolute;
+	left: 315px;
+	bottom: 165px;
+	display: flex;
+	z-index: 40;
+	width: 1280px;
+	height: 10px;
+	background-color: aliceblue;
+	border-radius: 5px;
+	animation: bar4 4s ease-in-out forwards;
+}
+@keyframes bar4 {
+	0% {
+		transform: scaleX(0);
+		transform-origin: top;
+	}
+	50% {
+		transform: scaleX(0);
+		transform-origin: top;
+	}
+	100% {
+		transform: scaleX(1);
+		transform-origin: top;
 	}
 }
