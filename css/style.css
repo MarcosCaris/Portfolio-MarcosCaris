@@ -374,8 +374,8 @@ body {
 	cursor: pointer;
 	position: absolute;
 	border-radius: 0.25em;
-	animation: opacity2 9.7s forwards, tansform__final_box 3s;
-	animation-delay: 0s, 0s, 7.6s;
+	animation: opacity2 9.6s forwards, tansform__final_box 3s;
+	animation-delay: 0s, 7.2s;
 
 	text-shadow: 0 0 0.45em #ac30ff, 0 0 0.125em hsl(0 0% 100% / 0.3);
 	box-shadow: 0 0 0.5em 0 #ac30ff, inset 0 0 0.5em 0 #ac30ff;
